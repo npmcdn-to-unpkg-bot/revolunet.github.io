@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Extend Google Spreadsheets with npmcdn.com and React]]></title>
-    <link href="http://blog.revolunet.com/blog/2016/02/08/extend-google-apps-scripts-with-npmcdn-and-react/"/>
+    <title type="html"><![CDATA[Extend Google Spreadsheets with unpkg.com and React]]></title>
+    <link href="http://blog.revolunet.com/blog/2016/02/08/extend-google-apps-scripts-with-unpkg-and-react/"/>
     <updated>2016-02-08T00:00:00+01:00</updated>
-    <id>http://blog.revolunet.com/blog/2016/02/08/extend-google-apps-scripts-with-npmcdn-and-react</id>
+    <id>http://blog.revolunet.com/blog/2016/02/08/extend-google-apps-scripts-with-unpkg-and-react</id>
     <content type="html"><![CDATA[<p>Sometimes you need a solid platform where people can <strong>collaborate in real-time and input data in a structured, reusable way</strong>. Depending on your needs and planning, Google Spreadsheet can be helpful in such cases, specially if you dont have time or ressources to create a full-blown &#8220;admin interface&#8221;.</p>
 
 <p>Of course, a tailored-made admin interface can be &#8220;better&#8221;, but well, Google Spreadsheet is here, <strong>instantly available</strong>, battle-tested, powerful, very flexible and as we&#8217;ll see below, you can even extends the UI.</p>
@@ -95,7 +95,7 @@
 
 <p>I prefer the second approach because its lighter and allow cient-side caching for 3rd-party libraries which is faster.</p>
 
-<p>There is a little gem recently published at <a href="npmcdn.com">npmcdn.com</a>; this service from the well-named <a href="http://twitter.com/@mjackson">Michael Jackson</a> allows you to grab any npm module just by adding a script-tag to your html doc. This is the perfect tool to inject <strong>umd libraries</strong> into our iframe.</p>
+<p>There is a little gem recently published at <a href="unpkg.com">unpkg.com</a>; this service from the well-named <a href="http://twitter.com/@mjackson">Michael Jackson</a> allows you to grab any npm module just by adding a script-tag to your html doc. This is the perfect tool to inject <strong>umd libraries</strong> into our iframe.</p>
 
 <p>Here&#8217;s an example sidebar.html :</p>
 
@@ -133,9 +133,9 @@
 </span><span class='line'><span class="nt">&lt;html&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;head&gt;</span>
 </span><span class='line'>    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;https://ssl.gstatic.com/docs/script/css/add-ons1.css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//npmcdn.com/react@0.14.7/dist/react.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//npmcdn.com/react-dom@0.14.7/dist/react-dom.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//npmcdn.com/react-multiselect-revolunet@1.0.5&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//unpkg.com/react@0.14.7/dist/react.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//unpkg.com/react-dom@0.14.7/dist/react-dom.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//unpkg.com/react-multiselect-revolunet@1.0.5&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/head&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;body&gt;&lt;/body&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;script&gt;</span>
